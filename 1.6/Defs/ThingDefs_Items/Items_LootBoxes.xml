@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="AArmoury_LootBoxBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingClass>ThingWithComps</thingClass>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
+		
+		<stackLimit>1</stackLimit>
+		<preventSpawningInResourcePod>true</preventSpawningInResourcePod>
+		<tradeNeverGenerateStacked>true</tradeNeverGenerateStacked>
+		<tradeNeverStack>true</tradeNeverStack>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<rotatable>false</rotatable>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Buyable</tradeability>
+		<pathCost>14</pathCost>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_LootBoxBase">
+		<defName>ARandom_MaterialsLootBox</defName>
+		<label>materials box</label>
+		<description>A box filled with an assorted mix of useful construction and crafting materials.</description>
+		<thingClass>AlphaRandom.LootBox</thingClass>
+		
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/ARandom_MaterialsLootBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<thingSetMakerTags>
+			
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_LootBoxes</li>
+		</thingCategories>
+		
+		<modExtensions>
+			<li Class="AlphaRandom.LootBoxExtension">
+				<thingSetMakerDef>ARandom_Reward_Resources</thingSetMakerDef>
+				<totalMarketValueRange>175~250</totalMarketValueRange>
+				<countRange>1~2</countRange>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_LootBoxBase">
+		<defName>ARandom_LootBox</defName>
+		<label>loot box</label>
+		<description>A loot box.</description>
+		<thingClass>AlphaRandom.LootBox</thingClass>
+		
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/ARandom_LootBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>850</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<thingSetMakerTags>
+			
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_LootBoxes</li>
+		</thingCategories>
+		
+		<modExtensions>
+			<li Class="AlphaRandom.LootBoxExtension">
+				<thingSetMakerDef>Reward_ItemsStandard</thingSetMakerDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+</Defs>
