@@ -35,7 +35,8 @@ namespace AlphaRandom
             parms.totalMarketValueRange = GetExtension.totalMarketValueRange;
             parms.minSingleItemMarketValuePct = GetExtension.minSingleItemMarketValuePct;
             parms.allowNonStackableDuplicates = GetExtension.allowNonStackableDuplicates;
-            parms.countRange = GetExtension.countRange;
+            int fixStupidIntRangeStuff = GetExtension.countRange.RandomInRange;
+            parms.countRange = new IntRange(fixStupidIntRangeStuff, fixStupidIntRangeStuff);
            
             List<Thing> list2 = GetExtension.thingSetMakerDef.root.Generate(parms);
 

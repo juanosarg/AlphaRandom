@@ -97,5 +97,249 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+	<ThingDef ParentName="AArmoury_LootBoxBase">
+		<defName>ARandom_MedicineLootBox</defName>
+		<label>medicine box</label>
+		<description>A loot box.</description>
+		<thingClass>AlphaRandom.LootBox</thingClass>
+		
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/ARandom_MedicineLootBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<thingSetMakerTags>
+			
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_LootBoxes</li>
+		</thingCategories>
+		
+		<modExtensions>
+			<li Class="AlphaRandom.LootBoxExtension">
+				<thingSetMakerDef>ARandom_Reward_Medicines</thingSetMakerDef>
+				<totalMarketValueRange>650~900</totalMarketValueRange>
+				<countRange>1~3</countRange>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_LootBoxBase">
+		<defName>ARandom_TextilesLootBox</defName>
+		<label>textiles box</label>
+		<description>A loot box.</description>
+		<thingClass>AlphaRandom.LootBox</thingClass>
+		
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/ARandom_TextilesLootBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<thingSetMakerTags>
+			
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_LootBoxes</li>
+		</thingCategories>
+		
+		<modExtensions>
+			<li Class="AlphaRandom.LootBoxExtension">
+				<thingSetMakerDef>ARandom_Reward_Textiles</thingSetMakerDef>
+				<totalMarketValueRange>450~550</totalMarketValueRange>
+				<countRange>1~5</countRange>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_LootBoxBase">
+		<defName>ARandom_DrugsLootBox</defName>
+		<label>drugs box</label>
+		<description>A loot box.</description>
+		<thingClass>AlphaRandom.LootBox</thingClass>
+		
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/ARandom_DrugsLootBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<thingSetMakerTags>
+			
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_LootBoxes</li>
+		</thingCategories>
+		
+		<modExtensions>
+			<li Class="AlphaRandom.LootBoxExtension">
+				<thingSetMakerDef>ARandom_Reward_Drugs</thingSetMakerDef>
+				<totalMarketValueRange>450~550</totalMarketValueRange>
+				<countRange>1~5</countRange>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_LootBoxBase">
+		<defName>ARandom_ProduceBox</defName>
+		<label>produce box</label>
+		<description>A loot box.</description>
+		<thingClass>AlphaRandom.LootBox</thingClass>
+		
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/ARandom_ProduceLootBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<thingSetMakerTags>
+			
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_LootBoxes</li>
+		</thingCategories>
+		
+		<modExtensions>
+			<li Class="AlphaRandom.LootBoxExtension">
+				<thingSetMakerDef>ARandom_Reward_Produce</thingSetMakerDef>
+				<totalMarketValueRange>650~800</totalMarketValueRange>
+				<countRange>1~5</countRange>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_LootBoxBase">
+		<defName>ARandom_MealsBox</defName>
+		<label>meals box</label>
+		<description>A loot box.</description>
+		<thingClass>AlphaRandom.LootBox</thingClass>
+		
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/ARandom_MealsLootBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<thingSetMakerTags>
+			
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_LootBoxes</li>
+		</thingCategories>
+		
+		<modExtensions>
+			<li Class="AlphaRandom.LootBoxExtension">
+				<thingSetMakerDef>ARandom_Reward_Meals</thingSetMakerDef>
+				<totalMarketValueRange>650~800</totalMarketValueRange>
+				<countRange>1~5</countRange>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_LootBoxBase">
+		<defName>ARandom_BooksBox</defName>
+		<label>books box</label>
+		<description>A loot box.</description>
+		<thingClass>AlphaRandom.LootBox</thingClass>
+		
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/ARandom_BooksLootBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<thingSetMakerTags>
+			
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_LootBoxes</li>
+		</thingCategories>
+		
+		<modExtensions>
+			<li Class="AlphaRandom.LootBoxExtension">
+				<thingSetMakerDef>ARandom_Reward_Books</thingSetMakerDef>
+				<totalMarketValueRange>650~800</totalMarketValueRange>
+				<countRange>1~5</countRange>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_LootBoxBase">
+		<defName>ARandom_DrinksBox</defName>
+		<label>drinks box</label>
+		<description>A loot box.</description>
+		<thingClass>AlphaRandom.LootBox</thingClass>
+		
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/ARandom_DrinksLootBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1050</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<thingSetMakerTags>
+			
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_LootBoxes</li>
+		</thingCategories>
+		
+		<modExtensions>
+			<li Class="AlphaRandom.LootBoxExtension">
+				<thingSetMakerDef>ARandom_Reward_Drinks</thingSetMakerDef>
+				<totalMarketValueRange>950~1200</totalMarketValueRange>
+				<countRange>2~4</countRange>
+			</li>
+		</modExtensions>
+	</ThingDef>
 </Defs>

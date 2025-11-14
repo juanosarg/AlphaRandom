@@ -21,6 +21,178 @@
 											<categories>
 												<li>ResourcesRaw</li>
 											</categories>
+											<disallowedThingDefs>
+												<li MayRequire="Ludeon.RimWorld.Odyssey">GravlitePanel</li>
+												<li MayRequire="Ludeon.RimWorld.Odyssey">BlocksVacstone</li>
+											</disallowedThingDefs>
+											<disallowedCategories>
+												<li>PlantMatter</li>
+											</disallowedCategories>
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Medicines</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						
+						<options>
+							
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<categories>
+												<li>Medicine</li>
+											</categories>
+											
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Textiles</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						
+						<options>
+							
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<categories>
+												<li>Textiles</li>
+											</categories>
+											
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Drugs</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						
+						<options>
+							
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<thingDefs>
+												<li>Ambrosia</li>
+												<li>Flake</li>
+												<li>GoJuice</li>
+												<li>Yayo</li>
+												<li>Luciferium</li>
+												<li>Penoxycyline</li>
+												<li>PsychiteTea</li>
+												<li>SmokeleafJoint</li>
+												<li>WakeUp</li>
+												<li MayRequire="Ludeon.RimWorld.Odyssey">Drug_Psilocap</li>
+												<li MayRequire="sarg.alphabiomes">AB_RawRimeNodules</li>
+												<li MayRequire="sarg.alphacrafts,VanillaExpanded.VBrewE">AC_PipeTobacco</li>
+												<li MayRequire="VanillaExpanded.VBrewE">VBE_Cigarettes</li>
+												<li MayRequire="VanillaExpanded.VBrewE">VBE_Cigars</li>
+												<li MayRequire="vanillaracesexpanded.genie">VRE_Antibiotics</li>
+												<li MayRequire="OskarPotocki.VFE.Classical">VFEC_Opium</li>
+											</thingDefs>
+											
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Produce</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						
+						<options>
+							
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<categories>
+												<li>PlantFoodRaw</li>
+											</categories>
+											
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Meals</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						
+						<options>
+							
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<categories>
+												<li>FoodMeals</li>
+											</categories>
+											
 										</filter>
 									</fixedParams>
 								</thingSetMaker>
@@ -32,6 +204,69 @@
 		</root>
 	</ThingSetMakerDef>
 	
-	
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Books</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						
+						<options>
+							
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<categories>
+												<li>Books</li>
+											</categories>
+											
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Drinks</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						
+						<options>
+							
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+										<thingDefs>
+												<li>Beer</li>
+												
+											</thingDefs>
+											<categories>
+												<li MayRequire="VanillaExpanded.VBrewE">VBE_Drinks</li>
+											</categories>
+											
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
 </Defs>
 
