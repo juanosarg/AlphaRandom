@@ -12,6 +12,7 @@ namespace AlphaRandom
     {
 
         public LootBoxExtension cachedLootBoxExtension;
+        public CompQuality cachedCompQuality;
 
         public LootBoxExtension GetExtension {
             get {              
@@ -23,6 +24,45 @@ namespace AlphaRandom
             }
         }
 
+        public CompQuality GetQuality
+        {
+            get
+            {
+                if (cachedCompQuality is null)
+                {
+                    cachedCompQuality = this.GetComp<CompQuality>();
+                }
+                return cachedCompQuality;
+            }
+        }
+
+        public float AmountByQuality(QualityCategory quality)
+        {
+            switch (quality)
+            {
+
+                case QualityCategory.Awful:
+                    return 0.5f;
+                case QualityCategory.Poor:
+                    return 0.75f;
+                case QualityCategory.Normal:
+                    return 1;
+                case QualityCategory.Good:
+                    return 1.25f;
+                case QualityCategory.Excellent:
+                    return 1.5f;
+                case QualityCategory.Masterwork:
+                    return 2.5f;
+                case QualityCategory.Legendary:
+                    return 5f;
+
+            }
+            return 1;
+
+           
+
+        }
+
         public virtual int OpenTicks => 300;
 
         public virtual bool CanOpen => true;
@@ -32,7 +72,7 @@ namespace AlphaRandom
             
             ThingSetMakerParams parms = default(ThingSetMakerParams);
 
-            parms.totalMarketValueRange = GetExtension.totalMarketValueRange;
+            parms.totalMarketValueRange = GetExtension.totalMarketValueRange * AmountByQuality(GetQuality.Quality);
             parms.minSingleItemMarketValuePct = GetExtension.minSingleItemMarketValuePct;
             parms.allowNonStackableDuplicates = GetExtension.allowNonStackableDuplicates;
             int fixStupidIntRangeStuff = GetExtension.countRange.RandomInRange;

@@ -1,5 +1,291 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+
+ <ThingSetMakerDef>
+    <defName>ARandom_Reward_ItemsStandard</defName>
+   
+    <root Class="ThingSetMaker_Sum">
+      <resolveInOrder>true</resolveInOrder>
+      <options>
+        <!-- All types of rewards - use up to 5500$
+             The rest will go into market value fillers like gold and silver,
+             this is because some items are worth more than their market value due to their rarity,
+             we don't want some rewards to be way too good -->
+        <li>
+         
+          <thingSetMaker Class="ThingSetMaker_RandomOption">
+            
+            <options>
+
+              <!-- Note: Weights must be balanced against the number of items in each category -->
+
+              <!-- A category for core vanilla rewards, which should remain undilluted by future DLCs -->
+              <li>
+                <weight>3</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <qualityGenerator>Reward</qualityGenerator>
+                    <allowNonStackableDuplicates>False</allowNonStackableDuplicates>
+                    <filter>
+                      <thingSetMakerTagsToAllow>
+                        <li>RewardStandardCore</li>
+                      </thingSetMakerTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+              
+              <!-- Three tiers of misc items, with different preference levels --> 
+              <li>
+                <weight>5</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <qualityGenerator>Reward</qualityGenerator>
+                    <allowNonStackableDuplicates>False</allowNonStackableDuplicates>
+                    <filter>
+                      <thingSetMakerTagsToAllow>
+                        <li>RewardStandardHighFreq</li>
+                      </thingSetMakerTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+              <li>
+                <weight>2.5</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <qualityGenerator>Reward</qualityGenerator>
+                    <allowNonStackableDuplicates>False</allowNonStackableDuplicates>
+                    <filter>
+                      <thingSetMakerTagsToAllow>
+                        <li>RewardStandardMidFreq</li>
+                      </thingSetMakerTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+              <li>
+                <weight>1</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <qualityGenerator>Reward</qualityGenerator>
+                    <allowNonStackableDuplicates>False</allowNonStackableDuplicates>
+                    <filter>
+                      <thingSetMakerTagsToAllow>
+                        <li>RewardStandardLowFreq</li>
+                      </thingSetMakerTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+
+              <!-- Normal items, but in masterwork/legendary quality -->
+              <li>
+                <weight>1.5</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <qualityGenerator>Super</qualityGenerator>
+                    <allowNonStackableDuplicates>False</allowNonStackableDuplicates>
+                    <filter>
+                      <thingSetMakerTagsToAllow>
+                        <li>RewardStandardQualitySuper</li>
+                      </thingSetMakerTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+
+              <!-- Techprints -->
+              <li>
+                <weight>1</weight>
+                <thingSetMaker Class="ThingSetMaker_Techprints">
+                  <marketValueFactor>1.4</marketValueFactor>
+                </thingSetMaker>
+              </li>
+
+              <!-- Books -->
+              <li>
+                <weight>1.5</weight>
+                <thingSetMaker Class="ThingSetMaker_Books">
+                  <marketValueFactor>1.4</marketValueFactor>
+                  <fixedParams>
+                    <qualityGenerator>Reward</qualityGenerator>
+                    <allowNonStackableDuplicates>False</allowNonStackableDuplicates>
+                    <filter>
+                      <thingSetMakerTagsToAllow>
+                        <li>RewardStandardHighFreq</li>
+                      </thingSetMakerTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+
+              <!-- High-value raw resources. Generally plasteel, gold, etc. -->
+              <li>
+                <weight>0.5</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <filter>
+                      <categories>
+                        <li>ResourcesRaw</li>
+                      </categories>
+                      <disallowCheaperThan>7</disallowCheaperThan>
+                      <thingSetMakerTagsToDisallow>
+                        <li>RewardStandardHighFreq</li>
+                        <li>RewardStandardCore</li>
+                        <li>NonStandardReward</li>
+                      </thingSetMakerTagsToDisallow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+
+              <!-- Persona core - high chance if needed -->
+              <li>
+                <weight>0.2</weight>
+                <weightIfPlayerHasNoItem>1</weightIfPlayerHasNoItem>
+                <weightIfPlayerHasNoItemItem>AIPersonaCore</weightIfPlayerHasNoItemItem>
+                <thingSetMaker Class="ThingSetMaker_Conditional_MinMaxTotalMarketValue">
+                  <minMaxTotalMarketValue>2500</minMaxTotalMarketValue>
+                  <thingSetMaker Class="ThingSetMaker_Conditional_ResearchFinished">
+                    <researchProject>MultiAnalyzer</researchProject>
+                    <thingSetMaker Class="ThingSetMaker_Count">
+                      <fixedParams>
+                        <filter>
+                          <thingDefs>
+                            <li>AIPersonaCore</li>
+                          </thingDefs>
+                        </filter>
+                      </fixedParams>
+                    </thingSetMaker>
+                  </thingSetMaker>
+                </thingSetMaker>
+              </li>
+
+
+              <!-- Special royal items -->
+              <!-- Most factions can't make these, so if we're using a faction that can we want
+                   the probability of using them to be high. In addition, Empire usually gives
+                   honor so if they're giving items we want it to be one of their special
+                   items. -->
+              <li>
+                <weight>4</weight> 
+                <thingSetMaker Class="ThingSetMaker_Conditional_MakingFaction">
+                  <makingFaction MayRequire="Ludeon.RimWorld.Royalty">Empire</makingFaction>
+                  <requireNonNull>true</requireNonNull>
+                  <thingSetMaker Class="ThingSetMaker_MarketValue">
+                    <fixedParams>
+                      <qualityGenerator>Reward</qualityGenerator>
+                      <allowNonStackableDuplicates>False</allowNonStackableDuplicates>
+                      <filter>
+                        <thingSetMakerTagsToAllow>
+                          <li>ImplantEmpireRoyal</li>
+                          <li>WeaponBladelink</li>
+                        </thingSetMakerTagsToAllow>
+                        <thingSetMakerTagsToDisallow>
+                          <li>RewardNonEmpireFactionsOnly</li>
+                        </thingSetMakerTagsToDisallow>
+                        <tradeTagsToAllow>
+                          <li>PsychicWeapon</li>
+                          <li>PsychicApparel</li>
+                        </tradeTagsToAllow>
+                      </filter>
+                    </fixedParams>
+                  </thingSetMaker>
+                </thingSetMaker>
+              </li>
+
+              <li>
+                <weight>0</weight>
+                <weightIfPlayerHasXenotype>20</weightIfPlayerHasXenotype>
+                <weightIfPlayerHasXenotypeXenotype MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</weightIfPlayerHasXenotypeXenotype>
+                <thingSetMaker Class="ThingSetMaker_Conditional_MakingFaction">
+                  <makingFaction MayRequire="Ludeon.RimWorld.Biotech">Sanguophages</makingFaction>
+                  <requireNonNull>true</requireNonNull>
+                  <thingSetMaker Class="ThingSetMaker_Count">
+                    <fixedParams>
+                      <filter>
+                        <thingDefs>
+                          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCapacitySerum</li>
+                        </thingDefs>
+                      </filter>
+                    </fixedParams>
+                  </thingSetMaker>
+                </thingSetMaker>
+              </li>
+
+              <!-- Special tribal items -->
+              <!-- todo: Stop giving animus stones if you already have one -->
+              <li>
+                <weight>10</weight> <!-- High chance for tribal asker since you don't get quests from them often -->
+                <thingSetMaker Class="ThingSetMaker_Conditional_MakingFaction">
+                  <makingFactionCategories><li>Tribal</li></makingFactionCategories>
+                  <requireNonNull>true</requireNonNull>
+                  <thingSetMaker Class="ThingSetMaker_MarketValue">
+                    <fixedParams>
+                      <filter>
+                        <thingDefs>
+                          <li MayRequire="Ludeon.RimWorld.Royalty">AnimusStone</li>
+                        </thingDefs>
+                      </filter>
+                    </fixedParams>
+                  </thingSetMaker>
+                </thingSetMaker>
+              </li>
+
+            </options>
+          </thingSetMaker>
+        </li>
+        <li>
+          <minMarketValue>150</minMarketValue> <!-- not worth generating if we have only this market value left -->
+          <minTotalMarketValue>5500</minTotalMarketValue> <!-- this is only so we never generate these market value fillers (e.g. to get to max total market value) if there's no need to -->
+          <thingSetMaker Class="ThingSetMaker_RandomOption">
+            <options>
+              <!-- High-value raw resources. -->
+              <li>
+                <weight>1</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <filter>
+                      <thingDefs>
+                        <li>Gold</li>
+                      </thingDefs>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+              <li>
+                <weight>1</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <filter>
+                      <thingDefs>
+                        <li>Plasteel</li>
+                      </thingDefs>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+              <li>
+                <weight>1</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <filter>
+                      <thingDefs>
+                        <li>Uranium</li>
+                      </thingDefs>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+            </options>
+          </thingSetMaker>
+        </li>
+      </options>
+    </root>
+  </ThingSetMakerDef>
+
 	<ThingSetMakerDef>
 		<defName>ARandom_Reward_Resources</defName>
 		<root Class="ThingSetMaker_Sum">
@@ -12,7 +298,6 @@
 							<minSingleItemMarketValuePct>0.01</minSingleItemMarketValuePct>
 						</fixedParams>
 						<options>
-							
 							<li>
 								<weight>1</weight>
 								<thingSetMaker Class="ThingSetMaker_MarketValue">
@@ -44,11 +329,8 @@
 			<resolveInOrder>true</resolveInOrder>
 			<options>
 				<li>
-					
 					<thingSetMaker Class="ThingSetMaker_RandomOption">
-						
 						<options>
-							
 							<li>
 								<weight>1</weight>
 								<thingSetMaker Class="ThingSetMaker_MarketValue">
@@ -57,7 +339,6 @@
 											<categories>
 												<li>Medicine</li>
 											</categories>
-											
 										</filter>
 									</fixedParams>
 								</thingSetMaker>
@@ -74,11 +355,8 @@
 			<resolveInOrder>true</resolveInOrder>
 			<options>
 				<li>
-					
 					<thingSetMaker Class="ThingSetMaker_RandomOption">
-						
 						<options>
-							
 							<li>
 								<weight>1</weight>
 								<thingSetMaker Class="ThingSetMaker_MarketValue">
@@ -87,7 +365,6 @@
 											<categories>
 												<li>Textiles</li>
 											</categories>
-											
 										</filter>
 									</fixedParams>
 								</thingSetMaker>
@@ -104,11 +381,8 @@
 			<resolveInOrder>true</resolveInOrder>
 			<options>
 				<li>
-					
 					<thingSetMaker Class="ThingSetMaker_RandomOption">
-						
 						<options>
-							
 							<li>
 								<weight>1</weight>
 								<thingSetMaker Class="ThingSetMaker_MarketValue">
@@ -132,7 +406,6 @@
 												<li MayRequire="vanillaracesexpanded.genie">VRE_Antibiotics</li>
 												<li MayRequire="OskarPotocki.VFE.Classical">VFEC_Opium</li>
 											</thingDefs>
-											
 										</filter>
 									</fixedParams>
 								</thingSetMaker>
@@ -149,11 +422,8 @@
 			<resolveInOrder>true</resolveInOrder>
 			<options>
 				<li>
-					
 					<thingSetMaker Class="ThingSetMaker_RandomOption">
-						
 						<options>
-							
 							<li>
 								<weight>1</weight>
 								<thingSetMaker Class="ThingSetMaker_MarketValue">
@@ -162,7 +432,6 @@
 											<categories>
 												<li>PlantFoodRaw</li>
 											</categories>
-											
 										</filter>
 									</fixedParams>
 								</thingSetMaker>
@@ -179,11 +448,8 @@
 			<resolveInOrder>true</resolveInOrder>
 			<options>
 				<li>
-					
 					<thingSetMaker Class="ThingSetMaker_RandomOption">
-						
 						<options>
-							
 							<li>
 								<weight>1</weight>
 								<thingSetMaker Class="ThingSetMaker_MarketValue">
@@ -192,7 +458,6 @@
 											<categories>
 												<li>FoodMeals</li>
 											</categories>
-											
 										</filter>
 									</fixedParams>
 								</thingSetMaker>
@@ -203,18 +468,14 @@
 			</options>
 		</root>
 	</ThingSetMakerDef>
-	
 	<ThingSetMakerDef>
 		<defName>ARandom_Reward_Books</defName>
 		<root Class="ThingSetMaker_Sum">
 			<resolveInOrder>true</resolveInOrder>
 			<options>
 				<li>
-					
 					<thingSetMaker Class="ThingSetMaker_RandomOption">
-						
 						<options>
-							
 							<li>
 								<weight>1</weight>
 								<thingSetMaker Class="ThingSetMaker_MarketValue">
@@ -223,7 +484,6 @@
 											<categories>
 												<li>Books</li>
 											</categories>
-											
 										</filter>
 									</fixedParams>
 								</thingSetMaker>
@@ -240,24 +500,46 @@
 			<resolveInOrder>true</resolveInOrder>
 			<options>
 				<li>
-					
 					<thingSetMaker Class="ThingSetMaker_RandomOption">
-						
 						<options>
-							
 							<li>
 								<weight>1</weight>
 								<thingSetMaker Class="ThingSetMaker_MarketValue">
 									<fixedParams>
 										<filter>
-										<thingDefs>
+											<thingDefs>
 												<li>Beer</li>
-												
 											</thingDefs>
 											<categories>
 												<li MayRequire="VanillaExpanded.VBrewE">VBE_Drinks</li>
 											</categories>
-											
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Weapons</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						<options>
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<categories>
+												<li>WeaponsRanged</li>
+												<li>WeaponsMelee</li>
+											</categories>
 										</filter>
 									</fixedParams>
 								</thingSetMaker>
