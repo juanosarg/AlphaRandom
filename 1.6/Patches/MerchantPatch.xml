@@ -6,9 +6,11 @@
 			<li Class="StockGenerator_Category">
 				<categoryDef>ARandom_LootBoxes</categoryDef>
 				<countRange>
-					<min>2</min>
-					<max>6</max>
+					<min>1</min>
+					<max>3</max>
 				</countRange>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<excludedThingDefs><li>ARandom_TribalLootBox</li></excludedThingDefs>
 			</li>
 		</value>
 	</Operation>
@@ -18,9 +20,11 @@
 			<li Class="StockGenerator_Category">
 				<categoryDef>ARandom_LootBoxes</categoryDef>
 				<countRange>
-					<min>2</min>
-					<max>6</max>
+					<min>1</min>
+					<max>3</max>
 				</countRange>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<excludedThingDefs><li>ARandom_TribalLootBox</li></excludedThingDefs>
 			</li>
 		</value>
 	</Operation>
@@ -30,9 +34,11 @@
 			<li Class="StockGenerator_Category">
 				<categoryDef>ARandom_LootBoxes</categoryDef>
 				<countRange>
-					<min>2</min>
-					<max>6</max>
+					<min>1</min>
+					<max>3</max>
 				</countRange>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<excludedThingDefs><li>ARandom_TribalLootBox</li></excludedThingDefs>
 			</li>
 		</value>
 	</Operation>
@@ -42,9 +48,11 @@
 			<li Class="StockGenerator_Category">
 				<categoryDef>ARandom_LootBoxes</categoryDef>
 				<countRange>
-					<min>2</min>
-					<max>6</max>
+					<min>1</min>
+					<max>3</max>
 				</countRange>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
 			</li>
 		</value>
 	</Operation>
@@ -54,9 +62,10 @@
 			<li Class="StockGenerator_Category">
 				<categoryDef>ARandom_LootBoxes</categoryDef>
 				<countRange>
-					<min>2</min>
-					<max>6</max>
+					<min>1</min>
+					<max>3</max>
 				</countRange>
+				<thingDefCountRange>1~2</thingDefCountRange>
 				<maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
 			</li>
 		</value>

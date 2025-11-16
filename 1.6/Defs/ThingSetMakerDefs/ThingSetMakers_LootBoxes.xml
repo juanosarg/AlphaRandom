@@ -550,5 +550,125 @@
 			</options>
 		</root>
 	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Apparel</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						<options>
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<categories>
+												<li>Apparel</li>
+												
+											</categories>
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Tribal</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						<options>
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<thingDefs>
+												<li>PsychiteTea</li>
+												<li>SmokeleafJoint</li>
+												<li>MeleeWeapon_Club</li>
+												<li>MeleeWeapon_Ikwa</li>
+												<li>MeleeWeapon_Spear</li>
+												<li>Bow_Short</li>
+												<li>Pila</li>
+												<li>Bow_Recurve</li>
+												<li>MedicineHerbal</li>
+												<li>Pemmican</li>
+											</thingDefs>
+											
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Shells</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						<options>
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<categories>
+												<li>MortarShells</li>
+												
+											</categories>
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Hemogen</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						<options>
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<thingDefs>
+												<li>HemogenPack</li>
+												
+												<li MayRequire="vanillaracesexpanded.sanguophage">VRE_HemogenPack_Animal</li>
+												<li MayRequire="vanillaracesexpanded.sanguophage">VRE_HemogenPack_Corpse</li>
+												<li MayRequire="vanillaracesexpanded.sanguophage">VRE_HemogenPack_Sanguophage</li>
+											</thingDefs>
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
 </Defs>
 
