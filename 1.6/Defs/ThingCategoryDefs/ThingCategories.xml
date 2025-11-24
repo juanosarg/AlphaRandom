@@ -6,5 +6,11 @@
 		<parent>Manufactured</parent>
 		<iconPath>Things/Item/ARandom_LootBox</iconPath>
 	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>ARandom_FateDevices</defName>
+		<label>fate manipulation devices</label>
+		<parent>Manufactured</parent>
+		<iconPath>Things/Item/ARandom_ArchotechFateManipulator</iconPath>
+	</ThingCategoryDef>
 	
 </Defs>

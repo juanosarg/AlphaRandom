@@ -306,6 +306,8 @@
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\CompTargetEffect_TriggerIncident.cs" />
+    <Compile Include="Comps\Properties\CompProperties_TargetEffect_TriggerIncident.cs" />
     <Compile Include="DefExtensions\LootBoxExtension.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
@@ -313,6 +315,7 @@
     <Compile Include="Settings\AlphaRandom_Mod.cs" />
     <Compile Include="Settings\AlphaRandom_Settings.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
+    <Compile Include="Things\InertFateManipulator.cs" />
     <Compile Include="Things\LootBox.cs" />
   </ItemGroup>
   <ItemGroup />

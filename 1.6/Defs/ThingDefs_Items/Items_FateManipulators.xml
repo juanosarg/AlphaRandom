@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="AArmoury_FateManipulatorBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.1</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingClass>ThingWithComps</thingClass>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
+		<stackLimit>5</stackLimit>
+		<preventSpawningInResourcePod>true</preventSpawningInResourcePod>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<rotatable>false</rotatable>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>Buyable</tradeability>
+		<pathCost>14</pathCost>
+		<useHitPoints>true</useHitPoints>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_FateManipulatorBase">
+		<defName>ARandom_FateManipulator</defName>
+		<label>inert archotech fate manipulator</label>
+		<description>todo.</description>
+		<thingClass>AlphaRandom.InertFateManipulator</thingClass>
+		<graphicData>
+			<texPath>Things/Item/ARandom_ArchotechFateManipulator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Rare</tickerType>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Archotech</techLevel>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_FateDevices</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_FateManipulatorBase">
+		<defName>ARandom_FateManipulator_Benign</defName>
+		<label>benign archotech fate manipulator</label>
+		<description>todo.</description>
+		<graphicData>
+			<texPath>Things/Item/ARandom_ArchotechFateManipulator_Benign</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Archotech</techLevel>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_FateDevices</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Activate {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+				<useDuration>132</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="AlphaRandom.CompProperties_TargetEffect_TriggerIncident">
+				<incidentTypes>
+					<li>Misc</li>
+				</incidentTypes>
+				<blackList>
+					<li>PsychicDrone</li>
+					<li>ToxicFallout</li>
+					<li>VolcanicWinter</li>
+					<li>HeatWave</li>
+					<li>ColdSnap</li>
+					<li>Flashstorm</li>
+					<li>ShortCircuit</li>
+					<li>CropBlight</li>
+					<li>Alphabeavers</li>
+				</blackList>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_FateManipulatorBase">
+		<defName>ARandom_FateManipulator_Dark</defName>
+		<label>dark archotech fate manipulator</label>
+		<description>todo.</description>
+		<graphicData>
+			<texPath>Things/Item/ARandom_ArchotechFateManipulator_Dark</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Archotech</techLevel>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_FateDevices</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_FateManipulatorBase">
+		<defName>ARandom_FateManipulator_Chaotic</defName>
+		<label>chaotic archotech fate manipulator</label>
+		<description>todo.</description>
+		<graphicData>
+			<texPath>Things/Item/ARandom_ArchotechFateManipulator_Chaotic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Archotech</techLevel>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_FateDevices</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>
