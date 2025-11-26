@@ -8,6 +8,7 @@ namespace AlphaRandom
     {
         public List<IncidentCategoryDef> incidentTypes;
         public List<IncidentDef> blackList;
+        public List<IncidentDef> whiteList;
 
         public CompProperties_TargetEffect_TriggerIncident()
         {

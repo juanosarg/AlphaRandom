@@ -112,6 +112,32 @@
 		<thingCategories>
 			<li>ARandom_FateDevices</li>
 		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Activate {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+				<useDuration>132</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="AlphaRandom.CompProperties_TargetEffect_TriggerIncident">
+				<incidentTypes>
+					<li>DiseaseHuman</li>
+					<li>DiseaseAnimal</li>
+				</incidentTypes>
+				<whiteList>
+					<li>PsychicDrone</li>
+					<li>ToxicFallout</li>
+					<li>VolcanicWinter</li>
+					<li>HeatWave</li>
+					<li>ColdSnap</li>
+					<li>Flashstorm</li>
+					<li>ShortCircuit</li>
+					<li>CropBlight</li>
+					<li>Alphabeavers</li>
+				</whiteList>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="AArmoury_FateManipulatorBase">
 		<defName>ARandom_FateManipulator_Chaotic</defName>
