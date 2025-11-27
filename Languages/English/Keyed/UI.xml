@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 	<ARandom_NewManipulator>An inert fate manipulator has transformed into a {0}!</ARandom_NewManipulator>
+	<ARandom_IncidentCaused>The {0} triggered the {1} event!</ARandom_IncidentCaused>
 </LanguageData>

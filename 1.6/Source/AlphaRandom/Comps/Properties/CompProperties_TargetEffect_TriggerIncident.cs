@@ -4,11 +4,13 @@ using Verse;
 
 namespace AlphaRandom
 {
-    public class CompProperties_TargetEffect_TriggerIncident : CompProperties
+    public class CompProperties_TargetEffect_TriggerIncident : CompProperties_UseEffect
     {
         public List<IncidentCategoryDef> incidentTypes;
-        public List<IncidentDef> blackList;
+        public List<IncidentDef> blacklist;
         public List<IncidentDef> whiteList;
+        public bool anyIncident = false;
+        public int loops = 1;
 
         public CompProperties_TargetEffect_TriggerIncident()
         {

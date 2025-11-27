@@ -29,7 +29,7 @@
 	<ThingDef ParentName="AArmoury_FateManipulatorBase">
 		<defName>ARandom_FateManipulator</defName>
 		<label>inert archotech fate manipulator</label>
-		<description>todo.</description>
+		<description>A dormant archotech relic humming with unreadable potential. After lying inert for 1–10 days, it spontaneously reconfigures itself into one of three fully-formed fate manipulators, as if choosing its own destiny.</description>
 		<thingClass>AlphaRandom.InertFateManipulator</thingClass>
 		<graphicData>
 			<texPath>Things/Item/ARandom_ArchotechFateManipulator</texPath>
@@ -51,7 +51,7 @@
 	<ThingDef ParentName="AArmoury_FateManipulatorBase">
 		<defName>ARandom_FateManipulator_Benign</defName>
 		<label>benign archotech fate manipulator</label>
-		<description>todo.</description>
+		<description>An archotech device tuned toward harmony. When activated, it subtly bends probability to trigger generally positive events: boons, inspirations, lucky breaks, or gentle twists of fate that favour the colony. Of course there is always a chance for something negative to pop up!</description>
 		<graphicData>
 			<texPath>Things/Item/ARandom_ArchotechFateManipulator_Benign</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -78,8 +78,9 @@
 			<li Class="AlphaRandom.CompProperties_TargetEffect_TriggerIncident">
 				<incidentTypes>
 					<li>Misc</li>
+					<li>GiveQuest</li>
 				</incidentTypes>
-				<blackList>
+				<blacklist>
 					<li>PsychicDrone</li>
 					<li>ToxicFallout</li>
 					<li>VolcanicWinter</li>
@@ -89,14 +90,61 @@
 					<li>ShortCircuit</li>
 					<li>CropBlight</li>
 					<li>Alphabeavers</li>
-				</blackList>
+					<li>Eclipse</li>
+					<li>SolarFlare</li>
+					<li>GiveQuest_EndGame_ShipEscape</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">VolcanicAsh</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">LavaEmergence</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">LavaFlow</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">SeasonalFlooding</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">VolcanicDebris</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">DroughtInitial</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Drought</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GillRot</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">OrbitalDebris</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GiveQuest_MechanoidSignal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">GiveQuest_AncientComplex_Mechanitor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">NoxiousHaze</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">MetalhorrorImplantation</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoinerJoin_Metalhorror</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">MysteriousCargoUnnaturalCorpse</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">MysteriousCargoCube</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">MysteriousCargoRevenantSpine</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">RevenantEmergence</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">UnnaturalCorpseArrival</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">GoldenCubeArrival</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">GiveQuest_EndGame_RoyalAscent</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">GiveQuest_Intro_Wimp</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">GiveQuest_Intro_Deserter</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GiveQuest_EndGame_ArchonexusVictory</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GiveQuest_ReliquaryPilgrims</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_IceAge</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_GlobalWarming</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicRain</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_LongNight</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_Drought</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_SpaceBattle</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_Earthquake</li>
+	
+					
+				</blacklist>
+				<whiteList>
+					<li>ShipChunkDrop</li>
+					<li>OrbitalTraderArrival</li>
+					<li>TraderCaravanArrival</li>
+					<li>VisitorGroup</li>
+					<li>TravelerGroup</li>
+					<li>RaidFriendly</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GauranlenPodSpawn</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">PoluxTreeSpawn</li>
+				</whiteList>
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="AArmoury_FateManipulatorBase">
 		<defName>ARandom_FateManipulator_Dark</defName>
 		<label>dark archotech fate manipulator</label>
-		<description>todo.</description>
+		<description>A brooding construct that channels misfortune. Its activation guarantees negative events, accidents, threats and ominous omens, twisting probability toward suffering with cold archotech precision. Of course there is always a chance for something positive to pop up!</description>
 		<graphicData>
 			<texPath>Things/Item/ARandom_ArchotechFateManipulator_Dark</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -124,6 +172,8 @@
 				<incidentTypes>
 					<li>DiseaseHuman</li>
 					<li>DiseaseAnimal</li>
+					<li>ThreatBig</li>
+					<li>ThreatSmall</li>
 				</incidentTypes>
 				<whiteList>
 					<li>PsychicDrone</li>
@@ -135,14 +185,34 @@
 					<li>ShortCircuit</li>
 					<li>CropBlight</li>
 					<li>Alphabeavers</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">VolcanicAsh</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">LavaEmergence</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">LavaFlow</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">SeasonalFlooding</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">VolcanicDebris</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">DroughtInitial</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Drought</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GillRot</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">OrbitalDebris</li>
 				</whiteList>
+				<blacklist>
+					<li>CaravanDemand</li>
+					<li>Ambush</li>
+					<li>ManhunterAmbush</li>
+					<li>CaravanMeeting</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_IceAge</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_GlobalWarming</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicRain</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_LongNight</li>
+			
+				</blacklist>
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="AArmoury_FateManipulatorBase">
 		<defName>ARandom_FateManipulator_Chaotic</defName>
 		<label>chaotic archotech fate manipulator</label>
-		<description>todo.</description>
+		<description>A volatile anomaly of shifting patterns. When activated, it forces three completely random events, good, bad, or absurd, unleashing raw, unpredictable fate in rapid succession. "But Sarg, you broke my game!" Nu-uh, it was the archotechs!</description>
 		<graphicData>
 			<texPath>Things/Item/ARandom_ArchotechFateManipulator_Chaotic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -158,5 +228,40 @@
 		<thingCategories>
 			<li>ARandom_FateDevices</li>
 		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Activate {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+				<useDuration>132</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="AlphaRandom.CompProperties_TargetEffect_TriggerIncident">
+				<anyIncident>true</anyIncident>
+				<loops>3</loops>
+				<blacklist>
+					
+					<li>GiveQuest_EndGame_ShipEscape</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GiveQuest_ReliquaryPilgrims</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GiveQuest_MechanoidSignal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">GiveQuest_AncientComplex_Mechanitor</li>				
+					<li MayRequire="Ludeon.RimWorld.Royalty">GiveQuest_EndGame_RoyalAscent</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">GiveQuest_Intro_Wimp</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">GiveQuest_Intro_Deserter</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GiveQuest_EndGame_ArchonexusVictory</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">RevenantEmergence</li>
+					<li>CaravanDemand</li>
+					<li>Ambush</li>
+					<li>ManhunterAmbush</li>
+					<li>CaravanMeeting</li>
+					<li>GameEndedWanderersJoin</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_IceAge</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_GlobalWarming</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicRain</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_LongNight</li>
+				
+				</blacklist>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>
