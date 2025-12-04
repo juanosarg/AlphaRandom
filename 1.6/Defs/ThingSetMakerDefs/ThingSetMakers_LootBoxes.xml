@@ -630,6 +630,10 @@
 												<li>MortarShells</li>
 												
 											</categories>
+											<disallowedThingDefs>
+												<li MayRequire="Ludeon.RimWorld.Anomaly">>Shell_Deadlife</li>
+												
+											</disallowedThingDefs>
 										</filter>
 									</fixedParams>
 								</thingSetMaker>
