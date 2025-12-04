@@ -12,6 +12,15 @@
 				<thingDefCountRange>1~2</thingDefCountRange>
 				<excludedThingDefs><li>ARandom_TribalLootBox</li></excludedThingDefs>
 			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>ARandom_FateDevices</categoryDef>
+				<countRange>
+					<min>0</min>
+					<max>2</max>
+				</countRange>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				
+			</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -26,6 +35,15 @@
 				<thingDefCountRange>1~2</thingDefCountRange>
 				<excludedThingDefs><li>ARandom_TribalLootBox</li></excludedThingDefs>
 			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>ARandom_FateDevices</categoryDef>
+				<countRange>
+					<min>0</min>
+					<max>2</max>
+				</countRange>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				
+			</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -39,6 +57,15 @@
 				</countRange>
 				<thingDefCountRange>1~2</thingDefCountRange>
 				<excludedThingDefs><li>ARandom_TribalLootBox</li></excludedThingDefs>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>ARandom_FateDevices</categoryDef>
+				<countRange>
+					<min>0</min>
+					<max>2</max>
+				</countRange>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				
 			</li>
 		</value>
 	</Operation>

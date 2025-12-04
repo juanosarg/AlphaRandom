@@ -144,7 +144,7 @@
 	<ThingDef ParentName="AArmoury_FateManipulatorBase">
 		<defName>ARandom_FateManipulator_Dark</defName>
 		<label>dark archotech fate manipulator</label>
-		<description>A brooding construct that channels misfortune. Its activation guarantees negative events, accidents, threats and ominous omens, twisting probability toward suffering with cold archotech precision. Of course there is always a chance for something positive to pop up!</description>
+		<description>A brooding construct that channels misfortune. Its activation guarantees negative events, accidents, threats and ominous omens, twisting probability toward suffering with cold archotech precision.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; WHY would anyone use this? Well, there is a 15% chance an archotech boon will happen, instead of a random negative event. These boons have positive effects that can't be acquired otherwise.</description>
 		<graphicData>
 			<texPath>Things/Item/ARandom_ArchotechFateManipulator_Dark</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -152,6 +152,7 @@
 		<statBases>
 			<MarketValue>1000</MarketValue>
 			<DeteriorationRate>5</DeteriorationRate>
+			<ARandom_ArchotechBoonChance>0.15</ARandom_ArchotechBoonChance>
 		</statBases>
 		<techLevel>Archotech</techLevel>
 		<thingSetMakerTags>
@@ -169,6 +170,7 @@
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf"/>
 			<li Class="AlphaRandom.CompProperties_TargetEffect_TriggerIncident">
+				<archotechBoonChance>0.15</archotechBoonChance>
 				<incidentTypes>
 					<li>DiseaseHuman</li>
 					<li>DiseaseAnimal</li>
@@ -220,6 +222,7 @@
 		<statBases>
 			<MarketValue>1000</MarketValue>
 			<DeteriorationRate>5</DeteriorationRate>
+			<ARandom_ArchotechBoonChance>0.05</ARandom_ArchotechBoonChance>
 		</statBases>
 		<techLevel>Archotech</techLevel>
 		<thingSetMakerTags>
@@ -238,6 +241,7 @@
 			<li Class="CompProperties_UseEffectDestroySelf"/>
 			<li Class="AlphaRandom.CompProperties_TargetEffect_TriggerIncident">
 				<anyIncident>true</anyIncident>
+				<archotechBoonChance>0.05</archotechBoonChance>
 				<loops>3</loops>
 				<blacklist>
 					

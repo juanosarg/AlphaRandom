@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StatDef>
+		<defName>ARandom_ArchotechBoonChance</defName>
+		<label>archotech boon chance</label>
+		<description>The chance that this manipulator will trigger an archotech boon instead of a random event.</description>
+		<category>BasicsImportant</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>2000</displayPriorityInCategory>
+	</StatDef>
+</Defs>

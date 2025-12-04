@@ -23,7 +23,9 @@ namespace AlphaRandom
         public static ThingDef ARandom_FateManipulator_Dark;
         public static ThingDef ARandom_FateManipulator_Chaotic;
 
+        public static HediffDef ARandom_ArchotechBoon;
 
+        public static PawnKindDef Chicken;
 
     }
 }

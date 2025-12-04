@@ -11,6 +11,7 @@ namespace AlphaRandom
         public List<IncidentDef> whiteList;
         public bool anyIncident = false;
         public int loops = 1;
+        public float archotechBoonChance = 0;
 
         public CompProperties_TargetEffect_TriggerIncident()
         {

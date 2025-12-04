@@ -2,4 +2,14 @@
 <LanguageData>
 	<ARandom_NewManipulator>An inert fate manipulator has transformed into a {0}!</ARandom_NewManipulator>
 	<ARandom_IncidentCaused>The {0} triggered the {1} event!</ARandom_IncidentCaused>
+	<ARandom_BoonSkillsLearned>The archotechs have blessed {0} with knowledge of {1}!</ARandom_BoonSkillsLearned>
+	<ARandom_BoonInspiration>The archotechs have inspired {0}!</ARandom_BoonInspiration>
+	<ARandom_BoonHediff>The archotechs have blessed {0}!</ARandom_BoonHediff>
+	<ARandom_BoonGene>The archotechs have mutated {0} with {1}!</ARandom_BoonGene>
+	<ARandom_BoonTraits>The archotechs have completely reshuffled {0}'s personality!</ARandom_BoonTraits>
+	<ARandom_BoonSight>The archotechs have given {0} preternatural sight! The whole map has been revealed.</ARandom_BoonSight>
+	<ARandom_BoonMidasTouch>The archotechs have turned {0}'s possessions into pure gold!</ARandom_BoonMidasTouch>
+	<ARandom_BoonCleaningRepairing>The archotechs have cleaned filth and repaired buildings in the colony's home area!</ARandom_BoonCleaningRepairing>
+	<ARandom_BoonQuality>The archotechs have increased the quality of {0}'s equipment!</ARandom_BoonQuality>
+	<ARandom_BoonChickens>The archotechs... ▌egg 0101▌▌feather-collapse ▌▌[TIME] inexhaustible ███nesting [REDACTED] GRAVITY ▌▌do not.</ARandom_BoonChickens>
 </LanguageData>
