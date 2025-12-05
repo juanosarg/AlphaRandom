@@ -631,7 +631,7 @@
 												
 											</categories>
 											<disallowedThingDefs>
-												<li MayRequire="Ludeon.RimWorld.Anomaly">>Shell_Deadlife</li>
+												<li MayRequire="Ludeon.RimWorld.Anomaly">Shell_Deadlife</li>
 												
 											</disallowedThingDefs>
 										</filter>
@@ -663,6 +663,37 @@
 												<li MayRequire="vanillaracesexpanded.sanguophage">VRE_HemogenPack_Animal</li>
 												<li MayRequire="vanillaracesexpanded.sanguophage">VRE_HemogenPack_Corpse</li>
 												<li MayRequire="vanillaracesexpanded.sanguophage">VRE_HemogenPack_Sanguophage</li>
+											</thingDefs>
+										</filter>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</options>
+					</thingSetMaker>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+	<ThingSetMakerDef>
+		<defName>ARandom_Reward_Valuables</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					<thingSetMaker Class="ThingSetMaker_RandomOption">
+						<options>
+							<li>
+								<weight>1</weight>
+								<thingSetMaker Class="ThingSetMaker_MarketValue">
+									<fixedParams>
+										<filter>
+											<thingDefs>
+												<li>Silver</li>
+												<li>Gold</li>
+												<li>Hyperweave</li>
+												<li MayRequire="kikohi.jewelry">Diamond</li>
+												
+												
 											</thingDefs>
 										</filter>
 									</fixedParams>

@@ -63,11 +63,11 @@ namespace AlphaRandom
 
         }
 
-        public virtual int OpenTicks => 300;
+        public int OpenTicks => 300;
 
-        public virtual bool CanOpen => true;
+        public bool CanOpen => true;
 
-        public virtual void Open()
+        public void Open()
         {
             
             ThingSetMakerParams parms = default(ThingSetMakerParams);
@@ -99,6 +99,7 @@ namespace AlphaRandom
 
 
         }
+
 
 
     }

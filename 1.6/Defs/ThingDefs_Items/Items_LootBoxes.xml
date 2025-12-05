@@ -48,7 +48,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>200</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Neolithic</techLevel>
 		<thingSetMakerTags>
@@ -68,7 +68,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_MedicineLootBox</defName>
 		<label>medicine box</label>
-		<description>A loot box.</description>
+		<description>A sealed medical crate filled with useful drugs, bandages, and treatments.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -80,7 +80,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>750</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>2</DeteriorationRate>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
@@ -100,7 +100,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_TextilesLootBox</defName>
 		<label>textiles box</label>
-		<description>A loot box.</description>
+		<description>A box stuffed with fabrics, leathers, and specialty textiles for crafting.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -112,7 +112,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>500</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
@@ -132,7 +132,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_DrugsLootBox</defName>
 		<label>drugs box</label>
-		<description>A loot box.</description>
+		<description>A secure container holding a mix of recreational and combat drugs.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -144,7 +144,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>500</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>2</DeteriorationRate>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
@@ -164,7 +164,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_ProduceBox</defName>
 		<label>produce box</label>
-		<description>A loot box.</description>
+		<description>A supply crate filled with raw vegetable ingredients and fresh harvest goods.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -196,7 +196,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_MealsBox</defName>
 		<label>meals box</label>
-		<description>A loot box.</description>
+		<description>A stocked food box containing prepared meals ready to eat.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -228,7 +228,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_BooksBox</defName>
 		<label>books box</label>
-		<description>A loot box.</description>
+		<description>A crate of books, manuals, and assorted written materials.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -260,7 +260,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_DrinksBox</defName>
 		<label>drinks box</label>
-		<description>A loot box.</description>
+		<description>A heavy box loaded with beer, spirits, and other beverages.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -272,7 +272,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>1050</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>4</DeteriorationRate>
 		</statBases>
 		<techLevel>Medieval</techLevel>
 		<thingSetMakerTags>
@@ -292,7 +292,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_WeaponsBox</defName>
 		<label>weapons box</label>
-		<description>A loot box.</description>
+		<description>A reinforced crate holding weapons from various tech levels.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -304,7 +304,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>1050</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
@@ -324,7 +324,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_ApparelLootBox</defName>
 		<label>apparel box</label>
-		<description>A loot box.</description>
+		<description>A crate packed with clothing, armor pieces, and wearable gear.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -336,7 +336,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>1050</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
@@ -356,7 +356,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_TribalLootBox</defName>
 		<label>tribal box</label>
-		<description>A loot box.</description>
+		<description>A simple crate of tribal tools, supplies, and traditional equipment.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -388,7 +388,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_ShellsLootBox</defName>
 		<label>shells box</label>
-		<description>A loot box.</description>
+		<description>A reinforced box containing mortar shells and other explosive ammo.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -400,7 +400,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>500</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
@@ -417,10 +417,42 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<ThingDef ParentName="AArmoury_LootBoxBase">
+		<defName>ARandom_ValuablesLootBox</defName>
+		<label>valuables box</label>
+		<description>A high-security container filled with rare, high-value goods.</description>
+		<thingClass>AlphaRandom.LootBox</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/ARandom_HighSecurityLootBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>ARandom_LootBoxes</li>
+		</thingCategories>
+		<modExtensions>
+			<li Class="AlphaRandom.LootBoxExtension">
+				<thingSetMakerDef>ARandom_Reward_Valuables</thingSetMakerDef>
+				<totalMarketValueRange>2200~3000</totalMarketValueRange>
+				<countRange>2~3</countRange>
+			</li>
+		</modExtensions>
+	</ThingDef>
 	<ThingDef ParentName="AArmoury_LootBoxBase" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>ARandom_HemogenCrate</defName>
 		<label>hemogen crate</label>
-		<description>A loot box.</description>
+		<description>A medical crate containing hemogen packs.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -453,7 +485,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_LootBox</defName>
 		<label>loot box</label>
-		<description>A loot box.</description>
+		<description>A basic crate containing a random mix of low-value but useful items.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -465,7 +497,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>850</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
@@ -486,7 +518,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_LootBox_High</defName>
 		<label>high-value loot box</label>
-		<description>A loot box.</description>
+		<description>A premium crate packed with valuable goods and rare materials.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -498,7 +530,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>2000</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
@@ -519,7 +551,7 @@
 	<ThingDef ParentName="AArmoury_LootBoxBase">
 		<defName>ARandom_LootBox_SuperHigh</defName>
 		<label>very high-value loot box</label>
-		<description>A loot box.</description>
+		<description>An elite crate holding exceptionally valuable or powerful items.</description>
 		<thingClass>AlphaRandom.LootBox</thingClass>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -531,7 +563,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>5000</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Spacer</techLevel>
 		<thingSetMakerTags>
