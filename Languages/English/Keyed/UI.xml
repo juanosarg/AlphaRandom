@@ -12,5 +12,8 @@
 	<ARandom_BoonCleaningRepairing>The archotechs have cleaned filth and repaired buildings in the colony's home area!</ARandom_BoonCleaningRepairing>
 	<ARandom_BoonQuality>The archotechs have increased the quality of {0}'s equipment!</ARandom_BoonQuality>
 	<ARandom_BoonChickens>The archotechs... ▌egg 0101▌▌feather-collapse ▌▌[TIME] inexhaustible ███nesting [REDACTED] GRAVITY ▌▌do not.</ARandom_BoonChickens>
-	<ARandom_TotalMarketValueRange>Total market value range</ARandom_TotalMarketValueRange>
+	<ARandom_TotalMarketValueRange>Market value range (base)</ARandom_TotalMarketValueRange>
+	<ARandom_TotalMarketValueRange_Desc>Total market value range (minimum and maximum) of the objects that can be found by opening this loot box.</ARandom_TotalMarketValueRange_Desc>
+	<ARandom_TotalMarketValueRange_Quality>Market value range (by quality)</ARandom_TotalMarketValueRange_Quality>
+	<ARandom_TotalMarketValueRange_Quality_Desc>Total market value range (minimum and maximum) of the objects that can be found by opening this loot box. Box quality has modified the base value by a factor of {0}</ARandom_TotalMarketValueRange_Quality_Desc>
 </LanguageData>

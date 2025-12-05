@@ -100,6 +100,17 @@ namespace AlphaRandom
 
         }
 
+        public override IEnumerable<StatDrawEntry> SpecialDisplayStats()
+        {
+            foreach (StatDrawEntry item in base.SpecialDisplayStats())
+            {
+                yield return item;
+            }
+           
+            yield return new StatDrawEntry(StatCategoryDefOf.BasicsImportant, "ARandom_TotalMarketValueRange".Translate(), GetExtension.totalMarketValueRange.ToString(), "ARandom_TotalMarketValueRange_Desc".Translate(), 2749);
+            yield return new StatDrawEntry(StatCategoryDefOf.BasicsImportant, "ARandom_TotalMarketValueRange_Quality".Translate(), (GetExtension.totalMarketValueRange*AmountByQuality(GetQuality.Quality)).ToString(), "ARandom_TotalMarketValueRange_Quality_Desc".Translate(AmountByQuality(GetQuality.Quality).ToString()), 2748);
+
+        }
 
 
     }
