@@ -27,5 +27,7 @@ namespace AlphaRandom
 
         public static PawnKindDef Chicken;
 
+        public static ThingCategoryDef ARandom_LootBoxes;
+
     }
 }

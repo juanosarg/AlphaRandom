@@ -312,6 +312,7 @@
     <Compile Include="Defs\BlackListedTraitsDef.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Harmony\IncidentWorker_RaidEnemy_GenerateRaidLoot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\AlphaRandom_Mod.cs" />
     <Compile Include="Settings\AlphaRandom_Settings.cs" />
