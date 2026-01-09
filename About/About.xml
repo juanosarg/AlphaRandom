@@ -9,7 +9,7 @@
 	<packageId>sarg.alpharandom</packageId>
 	<description>Alpha Random adds a sense of "pride and accomplishment" to your RimWorld playthroughs by adding some loot randomization:
 
-- Adds themed lootboxes. These can be carried by raiders (commonality configurable through mod options).
+- Adds themed loot boxes. These can be carried by raiders (commonality configurable through mod options).
 - Adds "fate manipulators", archotech powered devices that can invoke events.
 - Both can appear in traders, and offered as quest rewards.</description>
 	<modDependencies>
