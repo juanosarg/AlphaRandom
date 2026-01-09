@@ -38,7 +38,7 @@
 		<tickerType>Rare</tickerType>
 		<statBases>
 			<MarketValue>1000</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Archotech</techLevel>
 		<thingSetMakerTags>
@@ -58,7 +58,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>1000</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Archotech</techLevel>
 		<thingSetMakerTags>
@@ -151,7 +151,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>1000</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 			<ARandom_ArchotechBoonChance>0.15</ARandom_ArchotechBoonChance>
 		</statBases>
 		<techLevel>Archotech</techLevel>
@@ -206,7 +206,8 @@
 					<li MayRequire="VanillaExpanded.VEE">VEE_GlobalWarming</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicRain</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_LongNight</li>
-			
+					<li MayRequire="OskarPotocki.VFE.Deserters">VFED_ImperialPatrol</li>
+					<li MayRequire="OskarPotocki.VFE.Deserters">VFED_PropagandaDrop</li>
 				</blacklist>
 			</li>
 		</comps>
@@ -221,7 +222,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>1000</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 			<ARandom_ArchotechBoonChance>0.05</ARandom_ArchotechBoonChance>
 		</statBases>
 		<techLevel>Archotech</techLevel>

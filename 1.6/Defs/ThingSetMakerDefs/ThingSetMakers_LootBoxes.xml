@@ -141,28 +141,7 @@
                 </thingSetMaker>
               </li>
 
-              <!-- Persona core - high chance if needed -->
-              <li>
-                <weight>0.2</weight>
-                <weightIfPlayerHasNoItem>1</weightIfPlayerHasNoItem>
-                <weightIfPlayerHasNoItemItem>AIPersonaCore</weightIfPlayerHasNoItemItem>
-                <thingSetMaker Class="ThingSetMaker_Conditional_MinMaxTotalMarketValue">
-                  <minMaxTotalMarketValue>2500</minMaxTotalMarketValue>
-                  <thingSetMaker Class="ThingSetMaker_Conditional_ResearchFinished">
-                    <researchProject>MultiAnalyzer</researchProject>
-                    <thingSetMaker Class="ThingSetMaker_Count">
-                      <fixedParams>
-                        <filter>
-                          <thingDefs>
-                            <li>AIPersonaCore</li>
-                          </thingDefs>
-                        </filter>
-                      </fixedParams>
-                    </thingSetMaker>
-                  </thingSetMaker>
-                </thingSetMaker>
-              </li>
-
+             
 
               <!-- Special royal items -->
               <!-- Most factions can't make these, so if we're using a faction that can we want

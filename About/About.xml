@@ -3,13 +3,15 @@
 	<name>Alpha Random</name>
 	<author>Sarg Bjornson</author>
 	<supportedVersions>
-	
 		<li>1.6</li>
 	</supportedVersions>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/AlphaRandomLogo</modIconPath>
 	<packageId>sarg.alpharandom</packageId>
-	<description>
-</description>
+	<description>Alpha Random adds a sense of "pride and accomplishment" to your RimWorld playthroughs by adding some loot randomization:
+
+- Adds themed lootboxes. These can be carried by raiders (commonality configurable through mod options).
+- Adds "fate manipulators", archotech powered devices that can invoke events.
+- Both can appear in traders, and offered as quest rewards.</description>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
@@ -22,10 +24,8 @@
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
 		</li>
-		
 	</modDependencies>
 	<loadAfter>
-		
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
 </ModMetaData>

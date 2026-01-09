@@ -240,7 +240,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>750</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Medieval</techLevel>
 		<thingSetMakerTags>
