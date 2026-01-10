@@ -17,6 +17,7 @@
 	<ARandom_TotalMarketValueRange_Quality>Market value range (by quality)</ARandom_TotalMarketValueRange_Quality>
 	<ARandom_TotalMarketValueRange_Quality_Desc>Total market value range (minimum and maximum) of the objects that can be found by opening this loot box. Box quality has modified the base value by a factor of {0}</ARandom_TotalMarketValueRange_Quality_Desc>
 	<ARandom_AddLootboxesToRaiders>Add random lootboxes to raiders</ARandom_AddLootboxesToRaiders>
+	<ARandom_AddLootboxesToRaidersDesc>With this on, all raiders coming into your base have a chance to carry a random loot box.</ARandom_AddLootboxesToRaidersDesc>
 	<ARandom_LootboxCommonality>Raider lootbox chance</ARandom_LootboxCommonality>
 	<ARandom_LootboxCommonalityDesc>By default, only 1% of raiders will arrive with a lootbox on their inventory, but you can tweak that.</ARandom_LootboxCommonalityDesc>
 	<ARandom_Reset>Reset</ARandom_Reset>
