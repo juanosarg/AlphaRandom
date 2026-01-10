@@ -230,11 +230,11 @@ namespace AlphaRandom
                     for(int i= 0; i < 6; i++)
                     {
                         Pawn chicken = PawnGenerator.GeneratePawn(new PawnGenerationRequest(InternalDefOf.Chicken, pawn.Faction, PawnGenerationContext.NonPlayer, null, fixedBiologicalAge: 2));
-                        GenSpawn.Spawn(pawn, parent.Position, pawn.Map, WipeMode.VanishOrMoveAside);
+                        GenSpawn.Spawn(chicken, parent.Position, pawn.Map, WipeMode.VanishOrMoveAside);
                         if (CellFinder.TryFindRandomSpawnCellForPawnNear(parent.Position, pawn.Map, out var result, 5, (IntVec3 c) => GenSight.LineOfSight(parent.Position, c, pawn.Map, skipFirstCell: true)))
                         {
-                            pawn.rotationTracker.FaceCell(result);
-                            PawnFlyer pawnFlyer = PawnFlyer.MakeFlyer(ThingDefOf.PawnFlyer_Stun, pawn, result, null, null);
+                            chicken.rotationTracker.FaceCell(result);
+                            PawnFlyer pawnFlyer = PawnFlyer.MakeFlyer(ThingDefOf.PawnFlyer_Stun, chicken, result, null, null);
                             if (pawnFlyer != null)
                             {
                                 GenSpawn.Spawn(pawnFlyer, result, pawn.Map);
