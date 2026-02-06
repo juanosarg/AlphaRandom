@@ -14,8 +14,11 @@
              we don't want some rewards to be way too good -->
         <li>
          
+          <maxMarketValue>100000</maxMarketValue>
           <thingSetMaker Class="ThingSetMaker_RandomOption">
-            
+           <fixedParams>
+              <minSingleItemMarketValuePct>0.15</minSingleItemMarketValuePct> <!-- we don't want too cheap items -->
+            </fixedParams>
             <options>
 
               <!-- Note: Weights must be balanced against the number of items in each category -->

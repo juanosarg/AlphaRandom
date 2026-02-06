@@ -75,6 +75,7 @@ namespace AlphaRandom
             parms.totalMarketValueRange = GetExtension.totalMarketValueRange * AmountByQuality(GetQuality.Quality);
             parms.minSingleItemMarketValuePct = GetExtension.minSingleItemMarketValuePct;
             parms.allowNonStackableDuplicates = GetExtension.allowNonStackableDuplicates;
+            
             int fixStupidIntRangeStuff = GetExtension.countRange.RandomInRange;
             parms.countRange = new IntRange(fixStupidIntRangeStuff, fixStupidIntRangeStuff);
            
