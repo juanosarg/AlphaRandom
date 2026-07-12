@@ -118,8 +118,9 @@
 					<li MayRequire="Ludeon.RimWorld.Royalty">GiveQuest_Intro_Deserter</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">GiveQuest_EndGame_ArchonexusVictory</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">GiveQuest_ReliquaryPilgrims</li>
-					<li MayRequire="VanillaExpanded.VEE">VEE_IceAge</li>
-					<li MayRequire="VanillaExpanded.VEE">VEE_GlobalWarming</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_Whiteout</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_Scorch</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicBloom</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicRain</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_LongNight</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_Drought</li>
@@ -202,8 +203,9 @@
 					<li>Ambush</li>
 					<li>ManhunterAmbush</li>
 					<li>CaravanMeeting</li>
-					<li MayRequire="VanillaExpanded.VEE">VEE_IceAge</li>
-					<li MayRequire="VanillaExpanded.VEE">VEE_GlobalWarming</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_Whiteout</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_Scorch</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicBloom</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicRain</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_LongNight</li>
 					<li MayRequire="OskarPotocki.VFE.Deserters">VFED_ImperialPatrol</li>
@@ -260,8 +262,9 @@
 					<li>ManhunterAmbush</li>
 					<li>CaravanMeeting</li>
 					<li>GameEndedWanderersJoin</li>
-					<li MayRequire="VanillaExpanded.VEE">VEE_IceAge</li>
-					<li MayRequire="VanillaExpanded.VEE">VEE_GlobalWarming</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_Whiteout</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_Scorch</li>
+					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicBloom</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_PsychicRain</li>
 					<li MayRequire="VanillaExpanded.VEE">VEE_LongNight</li>
 				
